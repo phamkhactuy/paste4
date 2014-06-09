@@ -29,18 +29,30 @@
 // Twitter : @atmon3r 
 // 
 /////////////////////////////////////////////////////////////////////////
-
+$now = time();
+$num = date("w");
+if ($num == 0)
+{ $sub = 7; }
+else { $sub = ($num-1); }
+$WeekMon  = mktime(0, 0, 0, date("m", $now)  , date("d", $now)-$sub, date("Y", $now));    //monday week begin calculation
+$todayh = getdate($WeekMon); //monday week begin reconvert
+$d = $todayh[mday];
+$m = $todayh[mon];
+$y = $todayh[year];
 if (!defined("IN_PASTE"))
       die("Không có quyền truy cập!");
       
 if (isset($_POST['submit'])){
-if ($startUp->getCaptchaStatus() == 'no' ||
+if (true
+        /*
+    $startUp->getCaptchaStatus() == 'no' ||
         (($_POST["txtCaptcha"] == $_SESSION["security_code"]) && (!empty($_POST["txtCaptcha"]) && !empty($_SESSION["security_code"])))
-    ) {
+        */
+        ) {
         if (!empty($_POST['paste'])){
 
                 if(empty($_POST['title'])) {
-                $title = 'Untitled';
+                 $title = 'Không tiêu đề '.$d.' - '.$m.' - '.$y;
                 } else {
                 $title = $_POST['title'];
                 }
