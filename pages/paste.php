@@ -31,7 +31,7 @@
 /////////////////////////////////////////////////////////////////////////
 
 if (!defined("IN_PASTE"))
-      die("Access denied!"); 
+      die("Không có quyền truy cập!"); 
 
 // Parse code in geshi lib
 include_once('libs/geshi/geshi.php');

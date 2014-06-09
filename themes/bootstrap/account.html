@@ -18,11 +18,11 @@
 						<div class="span4">
 							<h5>{$lang.userInfo}</h5>
 								<ul>
-									<li>Username: {$getUserdata->name}</li>
+									<li>Tài khoản: {$getUserdata->name}</li>
 									{if $getUserdata->seemail eq 'true'}
 									<li>{$lang.mail}: {mailto address=$getUserdata->mail encode="hex"} </li>
 									{/if}
-									<li>Level: {$getUserdata->level}</li>
+									<li>Cấp: {$getUserdata->level}</li>
 									{if !empty($getUserdata->location)}
 									<li>{$lang.userloc}: {$getUserdata->location}</li>
 									{/if}

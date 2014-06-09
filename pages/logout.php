@@ -31,7 +31,7 @@
 /////////////////////////////////////////////////////////////////////////
 
 if (!defined("IN_PASTE"))
-      die("Access denied!");
+      die("Không có quyền quy cập!");
 	
 $pasteUsers = new pasteUsers;
 $pasteUsers->logout();

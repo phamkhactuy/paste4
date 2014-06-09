@@ -31,7 +31,7 @@
 /////////////////////////////////////////////////////////////////////////
  
 if (!defined("IN_PASTE"))
-      die("Access denied!");
+      die("Không có quyền truy cập!");
       
  if (isset($_GET['searchToken'])) {
  	$startUp->redirect($conf['baseurl'].'/search/'.urlencode($_GET['searchPaste']));	 	

@@ -32,7 +32,7 @@
 
 
 if (!defined("IN_PASTE"))
-      die("Access denied!");
+      die("Không có quyền truy cập!");
 
 $startUp->isLoggedAcount(); 
 

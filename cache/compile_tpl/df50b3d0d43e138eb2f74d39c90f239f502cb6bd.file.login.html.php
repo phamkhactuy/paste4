@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2014-06-10 16:34:57
+<?php /* Smarty version Smarty-3.1.6, created on 2014-06-10 02:41:31
          compiled from "C:\wamp\www\paste4/themes/bootstrap\login.html" */ ?>
 <?php /*%%SmartyHeaderCode:36765396c3316120c2-32518796%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'df50b3d0d43e138eb2f74d39c90f239f502cb6bd' => 
     array (
       0 => 'C:\\wamp\\www\\paste4/themes/bootstrap\\login.html',
-      1 => 1396881054,
+      1 => 1402339278,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.6',
+  'unifunc' => 'content_5396c3316b072',
   'variables' => 
   array (
     'hooks' => 0,
@@ -23,8 +25,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'i' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_5396c3316b072',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5396c3316b072')) {function content_5396c3316b072($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_sortby')) include 'C:\\wamp\\www\\paste4\\libs\\plugins\\modifier.sortby.php';
 ?><?php echo $_smarty_tpl->getSubTemplate ("header.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('title'=>$_smarty_tpl->tpl_vars['hooks']->value->title->title_login), 0);?>
@@ -39,7 +39,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 	 <br />
             <div class="alert alert-error">
                    	<b><?php echo $_smarty_tpl->tpl_vars['lang']->value['error'];?>
- :</b> Login error !
+ :</b> Đăng nhập gặp lỗi !
                    	<a href="#" class="close" data-dismiss="alert">&times;</a>
             </div>
             <?php }?> 

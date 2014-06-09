@@ -31,7 +31,7 @@
 /////////////////////////////////////////////////////////////////////////
 
 if (!defined("IN_PASTE"))
-      die("Access denied!");
+      die("Không có quyền truy cập!");
 
 // Setup class
 require_once('libs/paypal.class.php');  // include the class file
@@ -66,7 +66,7 @@ switch ($_GET['action']) {
    case 'success':      // Order was successful...
  
  
-      echo "<html><head><title>Success</title></head><body><h3>Thank you for your order.</h3>";
+      echo "<html><head><title>Thành công</title></head><body><h3>Cám ơn đã thanh toán.</h3>";
       foreach ($_POST as $key => $value) { echo "$key: $value<br>"; }
       echo "</body></html>";
  
@@ -76,7 +76,7 @@ switch ($_GET['action']) {
 
       // The order was canceled before being completed.
  
-      echo "<html><head><title>Canceled</title></head><body><h3>The order was canceled.</h3>";
+      echo "<html><head><title>Canceled</title></head><body><h3>Hóa đơn đã hủy.</h3>";
       echo "</body></html>";
       
       break;

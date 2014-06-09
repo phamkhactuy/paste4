@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.6, created on 2014-06-10 16:32:33
+<?php /* Smarty version Smarty-3.1.6, created on 2014-06-10 02:56:34
          compiled from "C:\wamp\www\paste4/themes/bootstrap\index.html" */ ?>
 <?php /*%%SmartyHeaderCode:38915396c2a123e3d5-34202851%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '3a2e03582dc27e4db197697232a32010c491a25f' => 
     array (
       0 => 'C:\\wamp\\www\\paste4/themes/bootstrap\\index.html',
-      1 => 1396881054,
+      1 => 1402340190,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.6',
+  'unifunc' => 'content_5396c2a13b460',
   'variables' => 
   array (
     'hooks' => 0,
@@ -28,8 +30,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'getCaptchaStatus' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.6',
-  'unifunc' => 'content_5396c2a13b460',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5396c2a13b460')) {function content_5396c2a13b460($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_sortby')) include 'C:\\wamp\\www\\paste4\\libs\\plugins\\modifier.sortby.php';
 ?><?php echo $_smarty_tpl->getSubTemplate ("header.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('title'=>$_smarty_tpl->tpl_vars['hooks']->value->title->home_title), 0);?>
@@ -149,6 +149,7 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
 " name="title" type="text" value="<?php if (isset($_POST['title'])){?><?php echo $_POST['title'];?>
 <?php }?>" class="st-forminput" /><br />
 		      </p>
+          <!--
           <?php if ($_smarty_tpl->tpl_vars['getCaptchaStatus']->value=='yes'){?>
               <h4>Captcha</h4>
               <p>
@@ -159,7 +160,7 @@ $_smarty_tpl->tpl_vars['item']->_loop = true;
 " id="imgCaptcha" src="libs/captcha/create_image.php" onclick="setTimeout('refreshimg()', 300); return false;" alt="<?php echo $_smarty_tpl->tpl_vars['lang']->value['CoCtrit'];?>
 " /><br />
           <?php }?>
-
+          -->
         <br />
 				<input name="submit" type="submit" value="Submit" id="submit" class="btn btn-primary" />
               </p>

@@ -1,10 +1,10 @@
 <html>
 <head>
-<title>404 Not Found</title>
+<title>404 Không tìm thấy trang</title>
 </head>
 <body>
-<h1>Not Found</h1>
-The requested document was not found on this server.
+<h1>Không tìm thấy trang</h1>
+Không tìm thấy trang này.
 <HR>
 </body>
 </html>
